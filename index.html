@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Expense Tracker</h1>
+      <p>Track your expenses easily!</p>
+    </header>
+
+    <!-- Add expense form -->
+    <section class="expense-form">
+      <h2>Add New Expense</h2>
+      <form id="expense-form">
+        <input type="text" id="description" placeholder="Expense Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="date" id="date" required>
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Expense list section -->
+    <section class="expense-list">
+      <h2>Expense List</h2>
+      <ul id="expense-list">
+        <!-- Expenses will be dynamically added here -->
+      </ul>
+      <button id="reset-btn">Reset All Expenses</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
